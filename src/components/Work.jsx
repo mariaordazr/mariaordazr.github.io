@@ -1,31 +1,17 @@
+// src/components/Work.jsx
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import './Work.css';
 
-const projects = [
-  {
-    id: 1,
-    title: "Portfolio V1",
-    description: "Mi primer portafolio desarrollado con React.",
-    tags: ["React", "CSS", "Vite"],
-    link: "#"
-  },
-  {
-    id: 2,
-    title: "App de Gestión",
-    description: "Sistema para gestión de inventarios.",
-    tags: ["Node.js", "MongoDB"],
-    link: "#"
-  }
-  // Agrega más proyectos aquí
-];
-
 const Work = () => {
+  const { t } = useLanguage(); // Accedemos a los datos traducidos
+
   return (
     <section id="work" className="work-section">
-      <h2 className="section-title">Selected Work</h2>
+      <h2 className="section-title">{t.work.title}</h2>
       <div className="projects-grid">
-        {projects.map((project) => (
-          <a href={project.link} key={project.id} className="project-card">
+        {t.work.projects.map((project) => (
+          <a href={project.link} key={project.id} className="project-card" target="_blank" rel="noopener noreferrer">
             <div className="card-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

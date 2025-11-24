@@ -1,41 +1,47 @@
-// App.jsx
+// src/App.jsx
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Work from './components/Work';
 import About from './components/About';
 import Contact from './components/Contact';
+import { LanguageProvider, useLanguage } from './context/LanguageContext'; // Importar Contexto
 
-// Asegúrate de tener una foto en src/assets/tu-foto.png
-// import heroImage from './assets/tu-foto.png';
+// Componente interno para poder usar el hook useLanguage
+const MainContent = () => {
+  const { t } = useLanguage(); // Obtenemos las traducciones
 
-function App() {
   return (
     <div className="app-container">
-      <Header/>
-      <main className="hero-section">
-        <div className="hero-content"> {/* Nuevo contenedor flex */}
+      <Header />
+      <main className="hero-section" id="home"> {/* ID Home agregado */}
+        <div className="hero-content">
           <div className="hero-text-container">
-             <h1 className="hero-text">
-              <span className="hero-line">Hi. I'm Maria Ordaz.<br/>A Software Developer.</span>
+            <h1 className="hero-text">
+              <span className="hero-line">{t.hero.greeting}<br/>{t.hero.role}</span>
             </h1>
             <p className="hero-subtitle">
-              Software Engineer specializing in modern software development. 
-              I focus on writing clean, scalable code to solve real-world problems and build high-quality digital products.
+              {t.hero.subtitle}
             </p>
           </div>
-          
           <div className="hero-image-container">
-             {/* Aquí va tu inspiración tipo Sean Halpin (Avatar/Foto) */}
-             {/* <img src={heroImage} alt="Maria Ordaz" className="hero-img" /> */}
+            {/* Imagen opcional */}
           </div>
         </div>
       </main>
-      <Work/>
-      <About/>
-      <Contact/>
-      <Footer/>
+      <Work />
+      <About />
+      <Contact />
+      <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <LanguageProvider>
+      <MainContent />
+    </LanguageProvider>
   );
 }
 
