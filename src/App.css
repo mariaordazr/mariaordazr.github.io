@@ -29,7 +29,7 @@
   font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1.1;
-  color: #043B27; /* Usamos tu verde del index.css para el texto principal */
+  color: #252525; /* Usamos tu verde del index.css para el texto principal */
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
