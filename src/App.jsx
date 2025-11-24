@@ -18,7 +18,8 @@ function App() {
               <span className="hero-line">Hi. I'm Maria Ordaz.<br/>A Software Developer.</span>
             </h1>
             <p className="hero-subtitle">
-              Software Engineer.
+              Software Engineer specializing in modern software development. 
+              I focus on writing clean, scalable code to solve real-world problems and build high-quality digital products.
             </p>
           </div>
           
