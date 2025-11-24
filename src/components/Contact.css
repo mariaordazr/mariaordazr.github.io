@@ -1,0 +1,43 @@
+.contact-section {
+  padding: 6rem 5%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Reutilizamos el estilo de título definido en About, 
+   pero aseguramos que el CSS se cargue o lo definimos aquí si es necesario */
+.contact-section .section-title {
+  color: #2d3748; /* Gris plomo oscuro */
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+.email-button {
+  display: inline-block;
+  background-color: #043B27; /* Tu verde principal */
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px; /* Bordes muy redondos estilo Sean Halpin */
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(4, 59, 39, 0.2);
+  background-color: #054d33;
+}

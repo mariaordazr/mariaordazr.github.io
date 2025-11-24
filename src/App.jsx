@@ -2,7 +2,9 @@
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Work from './components/Work'; 
+import Work from './components/Work';
+import About from './components/About';
+import Contact from './components/Contact';
 
 // Asegúrate de tener una foto en src/assets/tu-foto.png
 // import heroImage from './assets/tu-foto.png';
@@ -30,6 +32,8 @@ function App() {
         </div>
       </main>
       <Work/>
+      <About/>
+      <Contact/>
       <Footer/>
     </div>
   );

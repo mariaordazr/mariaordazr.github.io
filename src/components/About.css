@@ -1,0 +1,104 @@
+.about-section {
+  padding: 6rem 5%;
+  background-color: #fff; /* Fondo limpio para contraste */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+/* TÍTULOS: Gris Plomo Oscuro solicitado */
+.section-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.5rem;
+  color: #2d3748; /* Gris plomo oscuro */
+  margin-bottom: 2rem;
+}
+
+.subsection-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #2d3748; /* Mismo gris plomo */
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 0.5rem;
+}
+
+/* BIO */
+.bio-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skill-tag {
+  background-color: #f3f4f6;
+  color: #2d3748;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* TIMELINE EXPERIENCIA */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #e2e8f0;
+}
+
+.timeline-period {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fff;
+  padding: 0.2rem 0;
+}
+
+.timeline-role {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.timeline-company {
+  font-size: 1rem;
+  color: #043B27; /* Tu verde distintivo para la empresa */
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
