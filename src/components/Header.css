@@ -133,3 +133,9 @@
   background: #333;
   color: white;
 }
+
+@media (max-width: 468px) {
+  .nav {
+    gap: 1rem;
+  }
+}
