@@ -1,8 +1,8 @@
-/* Importa la fuente Montserrat */
+/* App.css */
 .app-container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif; /* Usamos DM Sans como en tu head */
   min-height: 100vh;
-  background-color: #f8f8f8; /* Color de fondo claro */
+  background-color: #f9f9f9; /* Un gris un poco más cálido */
   color: #333;
 }
 
@@ -10,53 +10,67 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 0 2rem;
-  text-align: center;
+  min-height: 90vh; /* Un poco menos de 100 para invitar a scrollear */
+  padding: 0 5%;
 }
-/* Aplicar Englebert solo al texto principal */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Texto */
 .hero-text {
   font-family: 'DM Sans', sans-serif;
-  font-weight: 400; /* Englebert no tiene bold, usaremos tamaño y sombra */
-  font-size: clamp(3rem, 10vw, 7rem);
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-/* Estilo específico para cada línea */
-.hero-line:nth-child(1) {
-  font-size: 0.9em;
-}
-
-.hero-line:nth-child(2) {
-  font-size: 1.3em;
-  /* Efecto "bold" simulado */
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.15);
-}
-
-.hero-line:nth-child(3) {
-  font-size: 0.7em;
-  letter-spacing: 2px;
-  margin-top: 1rem;
-}
-
-.hero-text {
   font-weight: 700;
-  font-size: clamp(2rem, 8vw, 6rem);
-  line-height: 1.2;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  color: #043B27; /* Usamos tu verde del index.css para el texto principal */
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
-.hero-line {
-  margin-bottom: 0.5rem;
+.hero-subtitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 500px;
+  line-height: 1.6;
 }
 
-/* Efecto de aparición para cada línea */
-.hero-line:nth-child(1) { animation: fadeIn 0.8s ease-out; }
-.hero-line:nth-child(2) { animation: fadeIn 1.2s ease-out; }
-.hero-line:nth-child(3) { animation: fadeIn 1.6s ease-out; }
+/* Imagen / Avatar */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px; /* Bordes redondeados estilo Sean */
+  box-shadow: 20px 20px 0px #e0e0e0; /* Efecto de "sombra sólida" */
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-text {
+    align-items: center;
+  }
 }
