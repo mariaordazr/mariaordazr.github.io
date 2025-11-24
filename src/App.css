@@ -74,3 +74,34 @@
     align-items: center;
   }
 }
+
+/* --- PEGAR AL FINAL DE src/App.css --- */
+
+/* Definimos la animación (aparecer desde abajo) */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* Aplicamos la animación a las líneas de texto */
+.hero-line {
+  /* Asegura que el elemento sea visible/oculto según la animación */
+  animation-fill-mode: both; 
+}
+
+/* Tiempos diferentes para cada línea para crear el efecto cascada */
+.hero-line:nth-child(1) {
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.2s; /* Pequeña pausa inicial */
+}
+
+.hero-line:nth-child(2) {
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.6s; /* Aparece un poco después de la primera */
+}

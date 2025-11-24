@@ -19,7 +19,7 @@ function App() {
               <span className="hero-line">A Software Developer.</span>
             </h1>
             <p className="hero-subtitle">
-              Creo experiencias digitales accesibles y atractivas.
+              Software Engineer.
             </p>
           </div>
           
