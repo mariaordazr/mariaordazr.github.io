@@ -25,7 +25,7 @@ function App() {
           
           <div className="hero-image-container">
              {/* Aquí va tu inspiración tipo Sean Halpin (Avatar/Foto) */}
-             <img src={heroImage} alt="Maria Ordaz" className="hero-img" />
+             {/* <img src={heroImage} alt="Maria Ordaz" className="hero-img" /> */}
           </div>
         </div>
       </main>
