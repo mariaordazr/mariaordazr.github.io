@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Work from './components/Work'; 
 
 // Asegúrate de tener una foto en src/assets/tu-foto.png
-import heroImage from './assets/tu-foto.png';
+// import heroImage from './assets/tu-foto.png';
 
 function App() {
   return (
