@@ -1,69 +1,47 @@
+/* src/components/Header.css */
+
+/* --- ESTILOS BASE (ESCRITORIO > 768px) --- */
 .header {
-  /* background-color: rgba(248, 248, 248, 0.9); Con transparencia */
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: transparent; /* Transparente al inicio */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 5%; /* Padding lateral para que no pegue a los bordes */
   display: flex;
-  justify-content: center;
-  background-color: #f8f8f8; /* Mismo color que el fondo */
+  justify-content: center; /* Centrado en escritorio */
   z-index: 1000;
   transition: all 0.3s ease;
 }
 
 .header.scrolled {
-  padding: 1rem 0;
+  padding: 1rem 5%;
   background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: #000; /* Color inicial - ajusta según tu diseño */
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  position: relative;
-}
-
-/* Para el efecto hover como el de Sean */
-.nav-link:hover {
-  color: #555; /* Color al hacer hover - ajusta */
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #000;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
   width: 100%;
+  max-width: 1200px;
 }
 
-/* Estilos específicos cuando el header tiene scroll */
-.header.scrolled .nav-link {
-  font-size: 1rem;
-}
-
-.header.scrolled .nav-link:hover {
+/* El icono del menú está oculto por defecto (en escritorio) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
   color: #333;
+}
+
+/* Contenedor del menú en escritorio */
+.nav-menu {
+  display: flex;
+  align-items: center;
 }
 
 .header__nav-list {
@@ -84,58 +62,109 @@
   font-weight: 500;
 }
 
-.header__nav-item a:hover {
+.header__nav-item a:hover,
+.header__nav-item .active {
   color: #000;
 }
 
+/* Línea animada debajo de los links */
 .header__nav-item a::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 1px;
-  bottom: -3px;
+  height: 2px;
+  bottom: -4px;
   left: 0;
-  background-color: #000;
+  background-color: #043B27; /* Tu verde */
   transition: width 0.3s ease;
 }
 
-.header__nav-item a:hover::after {
-  width: 100%;
-}
-
-.header__nav-item .active {
-  color: #000;
-  font-weight: 600;
-}
-
+.header__nav-item a:hover::after,
 .header__nav-item .active::after {
   width: 100%;
-}
-
-.header.scrolled {
-  padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .lang-btn {
   background: transparent;
   border: 1px solid #333;
-  padding: 5px 12px;
+  padding: 6px 16px;
   border-radius: 20px;
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
   font-weight: 600;
-  margin-left: 20px;
+  margin-left: 30px;
   transition: all 0.3s ease;
 }
+
 .lang-btn:hover {
   background: #333;
   color: white;
 }
 
-@media (max-width: 468px) {
+/* --- MEDIA QUERY: TABLET Y MÓVIL (<= 768px) --- */
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* Icono a la izquierda o derecha */
+    padding: 1.5rem 5%;
+    background-color: rgba(255, 255, 255, 0.95); /* Siempre fondo en móvil para legibilidad */
+  }
+
   .nav {
-    gap: 1rem;
+    justify-content: flex-end; /* Icono a la derecha */
+  }
+
+  .menu-icon {
+    display: block; /* Mostrar hamburguesa */
+    z-index: 1001; /* Por encima del menú desplegable */
+  }
+
+  /* El menú se convierte en una cortina/panel lateral */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto fuera de la pantalla a la derecha */
+    width: 100%; /* Ocupa toda la pantalla */
+    height: 100vh;
+    background-color: #ffffff;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    gap: 2rem;
+  }
+
+  /* Clase que se activa con React al abrir el menú */
+  .nav-menu.active {
+    right: 0; /* Se desliza hacia adentro */
+  }
+
+  .header__nav-list {
+    flex-direction: column; /* Lista vertical */
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .header__nav-item a {
+    font-size: 1.5rem; /* Letra más grande para tocar con el dedo */
+  }
+
+  .lang-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+/* --- MEDIA QUERY: MÓVILES PEQUEÑOS (<= 480px) --- */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 5%;
+  }
+  
+  .header__nav-item a {
+    font-size: 1.3rem;
   }
 }
