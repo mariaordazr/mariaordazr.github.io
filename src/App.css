@@ -2,7 +2,8 @@
 .app-container {
   font-family: 'DM Sans', sans-serif; /* Usamos DM Sans como en tu head */
   min-height: 100vh;
-  background-color: #f9f9f9; /* Un gris un poco más cálido */
+  /*background-color: #f9f9f9; /* Un gris un poco más cálido */
+  background-color: #fff;
   color: #333;
 }
 
