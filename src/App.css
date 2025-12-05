@@ -2,8 +2,7 @@
 .app-container {
   font-family: 'DM Sans', sans-serif; /* Usamos DM Sans como en tu head */
   min-height: 100vh;
-  /*background-color: #f9f9f9; /* Un gris un poco más cálido */
-  background-color: #fff;
+  background-color: #f9f9f9; /* Un gris un poco más cálido */
   color: #333;
 }
 
@@ -13,6 +12,7 @@
   align-items: center;
   min-height: 90vh; /* Un poco menos de 100 para invitar a scrollear */
   padding: 0 5%;
+  background-color: #fff; /* Fondo blanco para la sección hero */
 }
 
 .hero-content {
