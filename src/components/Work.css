@@ -40,6 +40,19 @@
   border-color: #043B27;
 }
 
+.project-link {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #043B27;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .card-content h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
