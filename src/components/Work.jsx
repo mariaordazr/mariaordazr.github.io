@@ -18,7 +18,9 @@ const Work = () => {
               <div className="tags">
                 {project.tags.map(tag => <span key={tag}>{tag}</span>)}
               </div>
-              <a href={project.link} key={project.id} className="project-link" target="_blank" rel="noopener noreferrer">{project.view}</a>
+              <div className="project-links">
+                <a href={project.link} key={project.id} className="project-link" target="_blank" rel="noopener noreferrer">{project.view}</a>
+              </div>
             </div>
           </div>
         ))}
