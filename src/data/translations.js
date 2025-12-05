@@ -22,13 +22,15 @@ export const translations = {
           title: "Oil Well Signal Processing",
           description: "Thesis Project: Developed a Python system using Pandas and Scikit-learn to detect anomalies in oil well signals, improving data accuracy through statistical models.",
           tags: ["Python", "Scikit-learn", "Pandas", "Data Science"],
-          link: "#"
+          view: "",
+          link: "/"
         },
         {
           id: 2,
           title: "Corporate Web Platform",
           description: "Full-stack development for Grupo Caroni Computer. Optimized internal management and digital presence using a relational database structure.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+          view: "View Project",
           link: "https://caronicomputer.com"
         },
         
@@ -87,14 +89,16 @@ export const translations = {
           id: 1,
           title: "Procesamiento de Señales Petroleras",
           description: "Tesis de Grado: Desarrollo de sistema en Python (Pandas, Scikit-learn) para detectar anomalías en pozos petroleros, mejorando la precisión de lectura.",
-          tags: ["Python", "Scikit-learn", "Pandas", "Ciencia de Datos"]
-          // link: "#"
+          tags: ["Python", "Scikit-learn", "Pandas", "Ciencia de Datos"],
+          view: "",
+          link: "/"
         },
         {
           id: 2,
           title: "Plataforma Web Corporativa",
           description: "Desarrollo Full-stack para Grupo Caroni Computer. Optimización de gestión interna y presencia digital usando bases de datos relacionales.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+          view: "Ver proyecto",
           link: "https://caronicomputer.com"
         },
       ]
@@ -109,7 +113,7 @@ export const translations = {
         {
           role: "Desarrolladora Web",
           company: "Grupo Caroni Computer",
-          period: "Sept 2025 - Present",
+          period: "Sept 2025 - Dic 2025",
           desc: "Desarrollo y optimización de soluciones web utilizando PHP, MySQL, HTML y CSS para la gestión interna."
         },
         {
