@@ -87,8 +87,8 @@ export const translations = {
           id: 1,
           title: "Procesamiento de Señales Petroleras",
           description: "Tesis de Grado: Desarrollo de sistema en Python (Pandas, Scikit-learn) para detectar anomalías en pozos petroleros, mejorando la precisión de lectura.",
-          tags: ["Python", "Scikit-learn", "Pandas", "Ciencia de Datos"],
-          link: "#"
+          tags: ["Python", "Scikit-learn", "Pandas", "Ciencia de Datos"]
+          // link: "#"
         },
         {
           id: 2,
