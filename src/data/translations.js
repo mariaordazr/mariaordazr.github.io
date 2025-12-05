@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       greeting: "Hi. I'm Maria Ordaz.",
       role: "A Software Developer.",
-      subtitle: "Computer Engineer specializing in modern software development. I focus on writing clean, scalable code to solve real-world problems and build high-quality digital products."
+      subtitle: "Software Engineer specializing in modern software development. I focus on writing clean, scalable code to solve real-world problems and build high-quality digital products."
     },
     work: {
       title: "Selected Work",
@@ -41,7 +41,7 @@ export const translations = {
       ]
     },
     about: {
-      title: "About Me",
+      title: "About me",
       bio1: "I am a **Computer Engineer** graduated from UCAB. I specialize in transforming complex problems into simple and functional interfaces.",
       bio2: "Currently, I combine Full Stack development (PHP/MySQL) with my passion for modern technologies like React and Python. I am always looking to optimize processes and learn new tools.",
       techTitle: "Tech Stack",
@@ -113,7 +113,7 @@ export const translations = {
       ]
     },
     about: {
-      title: "Sobre Mí",
+      title: "Sobre mí",
       bio1: "Soy **Ingeniera en Informática** graduada de la UCAB. Me especializo en transformar problemas complejos en interfaces simples y funcionales.",
       bio2: "Actualmente combino el desarrollo Full Stack (PHP/MySQL) con mi pasión por tecnologías modernas como React y Python. Siempre busco optimizar procesos.",
       techTitle: "Tecnologías",
