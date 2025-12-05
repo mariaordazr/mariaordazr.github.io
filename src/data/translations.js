@@ -5,7 +5,7 @@ export const translations = {
     header: {
       home: "Home",
       work: "Work",
-      about: "About",
+      about: "About me",
       contact: "Contact",
       btnLang: "ES"
     },
@@ -29,15 +29,9 @@ export const translations = {
           title: "Corporate Web Platform",
           description: "Full-stack development for Grupo Caroni Computer. Optimized internal management and digital presence using a relational database structure.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
-          link: "#"
+          link: "https://caronicomputer.com"
         },
-        {
-          id: 3,
-          title: "Developer Portfolio",
-          description: "Personal portfolio designed to showcase projects and experience, featuring a responsive design and dark/light modes.",
-          tags: ["React", "Vite", "CSS3"],
-          link: "https://github.com/mariaordazr/portfolio"
-        }
+        
       ]
     },
     about: {
@@ -77,7 +71,7 @@ export const translations = {
     header: {
       home: "Inicio",
       work: "Proyectos",
-      about: "Sobre Mí",
+      about: "Sobre mí",
       contact: "Contacto",
       btnLang: "EN"
     },
@@ -101,15 +95,8 @@ export const translations = {
           title: "Plataforma Web Corporativa",
           description: "Desarrollo Full-stack para Grupo Caroni Computer. Optimización de gestión interna y presencia digital usando bases de datos relacionales.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
-          link: "#"
+          link: "https://caronicomputer.com"
         },
-        {
-          id: 3,
-          title: "Portafolio de Desarrollador",
-          description: "Portafolio personal diseñado para mostrar proyectos y experiencia, con diseño responsivo.",
-          tags: ["React", "Vite", "CSS3"],
-          link: "https://github.com/mariaordazr/portfolio"
-        }
       ]
     },
     about: {
