@@ -19,6 +19,9 @@ const Footer = () => {
         <a href="https://wa.me/584249187030" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp className="social-icon" />
         </a>
+        <a href="https://instagram.com/mariaordaz.dev" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="social-icon" />
+        </a>
       </div>
       
       <div className="footer-links">
