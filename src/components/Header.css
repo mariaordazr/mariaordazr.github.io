@@ -28,7 +28,7 @@
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-  padding: 0 1rem;
+  padding: 0 0;
 }
 
 /* El icono del menú está oculto por defecto (en escritorio) */
