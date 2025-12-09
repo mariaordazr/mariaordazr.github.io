@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 1rem; /* Padding lateral para que no pegue a los bordes */
+  padding: 1.5rem 0; /* Padding lateral para que no pegue a los bordes */
   display: flex;
   justify-content: center; /* Centrado en escritorio */
   z-index: 1000;
@@ -112,6 +112,8 @@
 
   .nav {
     justify-content: flex-end; /* Icono a la derecha */
+    padding: 0 0;
+    margin: 0 1rem;
   }
 
   .menu-icon {
