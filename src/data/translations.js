@@ -52,13 +52,13 @@ export const translations = {
         {
           role: "Thesis Student - Data Processing",
           company: "BLC Oil & Gas",
-          period: "May 2023 - May 2025",
+          period: "Oct 2024 - May 2025",
           desc: "Developed algorithms in Python (Pandas, Scikit-learn) for anomaly detection in oil well signals."
         },
         {
           role: "IT Consultant Support",
           company: "MASISA (TechSolutions)",
-          period: "Jun 2022 - Mar 2023",
+          period: "Jun 2022 - Jun 2023",
           desc: "Technical support, infrastructure maintenance, and computer equipment optimization."
         }
       ]
@@ -113,19 +113,19 @@ export const translations = {
         {
           role: "Desarrolladora Web",
           company: "Grupo Caroni Computer",
-          period: "Sept 2025 - Dic 2025",
+          period: "Sept 2025 - Presente",
           desc: "Desarrollo y optimización de soluciones web utilizando PHP, MySQL, HTML y CSS para la gestión interna."
         },
         {
           role: "Tesista - Procesamiento de Datos",
           company: "BLC Oil & Gas",
-          period: "May 2023 - May 2025",
+          period: "Oct 2024 - May 2025",
           desc: "Desarrollo de algoritmos en Python para la detección de anomalías en señales de pozos petroleros."
         },
         {
           role: "Consultor de Soporte IT",
           company: "MASISA (TechSolutions)",
-          period: "Jun 2022 - Mar 2023",
+          period: "Jun 2022 - Jun 2023",
           desc: "Soporte técnico, mantenimiento de infraestructura y optimización de equipos informáticos."
         }
       ]
