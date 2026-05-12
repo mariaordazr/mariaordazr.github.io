@@ -14,7 +14,7 @@ const Contact = () => {
           {t.contact.text}
         </p>
         
-        <a href="mailto:mariaordaz.dev@gmail.com" className="email-button">
+        <a href="mailto:contact@mariaordaz.dev" className="email-button">
           {t.contact.button}
         </a>
       </div>
