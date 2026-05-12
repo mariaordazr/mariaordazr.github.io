@@ -27,7 +27,7 @@ export const translations = {
         },
         {
           id: 2,
-          title: "Corporate Web Platform",
+          title: "E-commerce Platform",
           description: "Full-stack development for Grupo Caroni Computer. Optimized internal management and digital presence using a relational database structure.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
           view: "View Project",
@@ -95,7 +95,7 @@ export const translations = {
         },
         {
           id: 2,
-          title: "Plataforma Web Corporativa",
+          title: "Plataforma de Comercio Electrónico",
           description: "Desarrollo Full-stack para Grupo Caroni Computer. Optimización de gestión interna y presencia digital usando bases de datos relacionales.",
           tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
           view: "Ver proyecto",
