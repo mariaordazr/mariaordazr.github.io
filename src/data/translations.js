@@ -44,7 +44,7 @@ export const translations = {
       expTitle: "Experience",
       experience: [
         {
-          role: "Web Developer",
+          role: "Web Developer Full Stack",
           company: "Grupo Caroni Computer",
           period: "Sept 2025 - Present",
           desc: "Development and optimization of web solutions using PHP, MySQL, HTML, and CSS for the company's internal management and digital presence."
@@ -111,7 +111,7 @@ export const translations = {
       expTitle: "Experiencia",
       experience: [
         {
-          role: "Desarrolladora Web",
+          role: "Desarrolladora Web Full Stack",
           company: "Grupo Caroni Computer",
           period: "Sept 2025 - Presente",
           desc: "Desarrollo y optimización de soluciones web utilizando PHP, MySQL, HTML y CSS para la gestión interna."
