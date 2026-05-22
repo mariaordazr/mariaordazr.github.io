@@ -41,3 +41,114 @@
   box-shadow: 0 10px 20px rgba(4, 59, 39, 0.2);
   background-color: #054d33;
 }
+
+/* =========================================
+   ESTILOS DEL FORMULARIO DESPLEGABLE
+   ========================================= */
+
+.contact-form-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  animation: slideDownFade 0.4s ease-out forwards;
+  text-align: left;
+}
+
+/* Animación de entrada */
+@keyframes slideDownFade {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #043B27;
+  box-shadow: 0 0 0 3px rgba(4, 59, 39, 0.1);
+}
+
+.contact-form textarea {
+  resize: vertical; /* Permite cambiar el alto, pero no el ancho */
+}
+
+/* Botones de acción */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancel-button {
+  background: transparent;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  color: #2d3748;
+  background-color: #f0f0f0;
+}
+
+.submit-button {
+  background-color: #043B27;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(4, 59, 39, 0.2);
+  background-color: #054d33;
+}
+
+/* Botón email original ajustado temporalmente por si cambia de elemento <a> a <button> */
+button.email-button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

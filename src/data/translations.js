@@ -64,9 +64,14 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Let's work together",
-      text: "I am currently available for new projects. If you have an idea or need help with web development, I'd love to hear from you!",
-      button: "Say Hello 👋"
+      title: "Get in touch",
+      text: "I'm currently available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.",
+      button: "Contact me",
+      nameLabel: "Name",
+      emailLabel: "Email",
+      messageLabel: "Message",
+      sendButton: "Send Message",
+      cancelButton: "Cancel"
     }
   },
   es: {
@@ -131,9 +136,14 @@ export const translations = {
       ]
     },
     contact: {
-      title: "Trabajemos juntos",
-      text: "Actualmente estoy disponible para nuevos proyectos. Si tienes una idea o necesitas ayuda, ¡me encantaría escucharte!",
-      button: "Saludar 👋"
+      title: "Contáctame",
+      text: "Actualmente estoy disponible para trabajo freelance. Si tienes un proyecto en mente, crees que necesitas mi ayuda o simplemente quieres saludar, no dudes en escribirme.",
+      button: "Contactar",
+      nameLabel: "Nombre",
+      emailLabel: "Correo",
+      messageLabel: "Mensaje",
+      sendButton: "Enviar Mensaje",
+      cancelButton: "Cancelar"
     }
   }
 };
