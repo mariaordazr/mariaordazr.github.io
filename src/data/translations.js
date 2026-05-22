@@ -65,7 +65,7 @@ export const translations = {
     },
     contact: {
       title: "Get in touch",
-      text: "I'm currently available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.",
+      text: "I'm currently available for new projects. If you have a project or proposal and my profile matches what you're looking for, please don't hesitate to contact me.",
       button: "Contact me",
       nameLabel: "Name",
       emailLabel: "Email",
@@ -137,7 +137,7 @@ export const translations = {
     },
     contact: {
       title: "Contáctame",
-      text: "Actualmente estoy disponible para trabajo freelance. Si tienes un proyecto en mente, crees que necesitas mi ayuda o simplemente quieres saludar, no dudes en escribirme.",
+      text: "Actualmente estoy disponible para nuevos trabajos. Si tienes un proyecto o una propuesta y mi perfil encaja con lo que buscas , no dudes en escribirme.",
       button: "Contactar",
       nameLabel: "Nombre",
       emailLabel: "Correo",
