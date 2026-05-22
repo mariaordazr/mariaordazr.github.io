@@ -65,7 +65,7 @@ export const translations = {
     },
     contact: {
       title: "Get in touch",
-      text: "I'm currently available for new projects. If you have a project or proposal and my profile matches what you're looking for, please don't hesitate to contact me.",
+      text: "I'm currently available for new projects. If you have a project or proposal and my profile matches what you're looking for, please don't hesitate to contact me. Contact@mariaordaz.dev",
       button: "Contact me",
       nameLabel: "Name",
       emailLabel: "Email",
@@ -137,7 +137,7 @@ export const translations = {
     },
     contact: {
       title: "Contáctame",
-      text: "Actualmente estoy disponible para nuevos trabajos. Si tienes un proyecto o una propuesta y mi perfil encaja con lo que buscas , no dudes en escribirme.",
+      text: "Actualmente estoy disponible para nuevos trabajos. Si tienes un proyecto o una propuesta y mi perfil encaja con lo que buscas , no dudes en escribirme. Contacto@mariaordaz.dev",
       button: "Contactar",
       nameLabel: "Nombre",
       emailLabel: "Correo",
